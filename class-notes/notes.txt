@@ -1,0 +1,32 @@
+Apa itu object?
+- Object adalah data yang berisi field / properties / attributes dan method / function /behaviour
+
+Apa itu Class?
+- Class berupa blueprint / cetakan untuk membuat object
+- Class harus ada terlebih dahulu sebelum membuat objectnya
+- Class berisikan deklarasi semua properties dan function yang dimiliki oleh object 
+- Setiap object selalu dibuat dari Class
+- dan sebuah class bisa membuat object tanpa batas
+ 
+OOP Typescript
+- OOP tidak sedetail bahasa pemrograman lain yang memang dari awal dirancang untuk OOP seperti JAVA/C++
+
+Constructor
+- Constructor adalah methode atau function yang dipanggil ketika pertama kali object dibuat dari class
+- Constructor sama saja dengan function pada umumnya, bisa memiliki parameter, bedanya constructor tidak perlu mengembalikan value
+
+Properties atau fields
+- Properties atau fields adalah attribute yang dimiliki oleh Class
+- Di TS kita perlu mendeklarasikan propnya terlebih dahulu beserta tipe datanya
+- Sama hanya di Type atau Interface, prop di class juga bisa dibuat optional, mandatory atau readonly
+- Untuk prop yang bersifat mandatory, wajib ditambahkan nilainya di Constructornya
+- untuk prop yang bersifat readonly, hanya dapat diubah didalam constructornya, diluar dari itu tidak bisa
+
+Method
+- Class juga bisa memiliki function didalamnya dan itu sering disebut sebagai method
+- Cara buatnya sama seperti di JS, hanya pada TS kita harus menetukaan tipe data parameter dan return valuenya
+
+Setter and Getter
+- Saat ini bila ingin mengubah data properties bisa langsung menggunakan operator "=" dan apabila mengambil valuenya bisa menggunakan "." untuk mengambil valuenya
+- Maka pada OOP ada fitur Setter dan Getter. Setter dan Getter merupakan sebauh method untuk mengubah (setter) ataupun mengambil (getter) nilai/value dari propnya
+- Karena bentuknya method maka kita bisa menambahkan validasi apaun pada method tersebut sebelum mengubah nilai propnya diubah
