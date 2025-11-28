@@ -30,3 +30,10 @@ Setter and Getter
 - Saat ini bila ingin mengubah data properties bisa langsung menggunakan operator "=" dan apabila mengambil valuenya bisa menggunakan "." untuk mengambil valuenya
 - Maka pada OOP ada fitur Setter dan Getter. Setter dan Getter merupakan sebauh method untuk mengubah (setter) ataupun mengambil (getter) nilai/value dari propnya
 - Karena bentuknya method maka kita bisa menambahkan validasi apaun pada method tersebut sebelum mengubah nilai propnya diubah
+
+
+Inheritance
+- Pewarisan antara class menggunakan "extends"
+- Secara otomatis semua properties dan method yang ada pada parent class akan diwariskan ke child class
+- Pewarisan di TS hanya bisa memiiliki 1 parent class
+- namun 1 Parent bisa memiliki banyak child class
