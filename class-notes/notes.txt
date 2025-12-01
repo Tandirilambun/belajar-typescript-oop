@@ -37,3 +37,46 @@ Inheritance
 - Secara otomatis semua properties dan method yang ada pada parent class akan diwariskan ke child class
 - Pewarisan di TS hanya bisa memiiliki 1 parent class
 - namun 1 Parent bisa memiliki banyak child class
+
+Interface Inheritance
+- Di bahasa pemrograman seperti java, kadang interface digunakan sebagai kontrak
+- Interface juga dapat digunakan sebagai kontrak class dengan menggunakan kata kunci "implements"
+- untuk Implements kita dapat melakukan implementasi lebih dari 1 interface, tapi pada extends hanya bisa 1 interface
+
+Super Constructor
+- Pada kasus Inheritance antar class, kadang child class ingin membuat constructor, baik itu sama seperti parent child ataupun berbeda
+- Sehingga ketika membuat Constructor pada child class, maka secara otomatis kita harus memanggil constructor di parent classnya
+- Menggunakan kata kunci super untuk memanggil constructor parent class
+
+Method Overriding
+- Saat membuat Child Class, kita bisa mendeklarasikan ulang method yang ada di Parent class
+- apabila semua deklarasi method sama, maka itu adlah method Overriding
+
+Super Method
+- Sama halnya constructor, kita juga dapat membuat method yang sama di parent class kemudian menggunakan kata kunci super untuk menggunakan method yang ada di parent class diikuti dengan method yang ingin kita panggil
+
+Visibility (Encapsulation)
+- Pada JS dan TS, secara default dalam membuat properties atau method sifatnya bisa diakses dari dalam maupun luar class
+- Dalam TS kita bisa menggunakan private, public dan protected untuk membungkus suatu properties atau method
+- Public : bisa diakses darimana pun, dan secara default tidak menyebutkan visibility
+- Private : hanya bisa diakses oleh classnya sendiri
+- Protected : sama seperti private, tapi bisa diakses oleh class turunannya
+
+Parameter properties
+- Kadang, seringnya kita selalu membuat parameter di constructor yang hanya digunakan sebagai nilai untuk properties
+- Kita bisa menggunakan Parameter Properties, yang secara otomatis parameter di Constructor akan dijadikan sebagai properties di classnya
+- dalam membuat parameter properties, kita bisa langsung menambahkan visibility pada parameter di constructor
+
+
+Operator Instanceof
+- digunakan untuk mengecek apakah suatu object merupakan instance dari class tertentu atau bentuknya
+- menggunakan typeof tidak akan bisa, karena typeof hanya mengecek tipe data
+- return type dari Instanceof adalah boolean, sehingga bernilai true apabila object merupakan instance dari objectnya, dan sebaliknya
+
+Polymorphism
+- Polymorphism merupakan kemampuan sebauh object untuk berubah bentuk menjadi bentuk lain
+- Polymorphism erat hubungannya dengan Inheritance
+
+Polymorphism method
+- saat membuat function/method dengan parameter, kita dapat mengirim data Polymorphism pada parameter tersebut
+- Misal membuat function dengan parameter class Employee, maka kita bisa mengirim object dalam bentuk class Employee, maupun turunannya yaitu Manager dan VicePresident
