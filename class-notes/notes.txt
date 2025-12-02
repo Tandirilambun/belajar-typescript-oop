@@ -80,3 +80,43 @@ Polymorphism
 Polymorphism method
 - saat membuat function/method dengan parameter, kita dapat mengirim data Polymorphism pada parameter tersebut
 - Misal membuat function dengan parameter class Employee, maka kita bisa mengirim object dalam bentuk class Employee, maupun turunannya yaitu Manager dan VicePresident
+
+Type Cast
+- Kita bisa mengubah tipe data ke satu tipe data yang lain (assertion type)
+- Hal ini juga bisa kita lakukan pada kasus Method Polymorphism
+- Dapat dikombinasikan menggunakan instance of dan type assertion
+
+Abstract Class
+- Abstract class merupakan deklarasi Class yang belum selesai
+- Sehingga diperbolehkan untuk memiliki properties atau method yang abstract atau belum dibuat code implemetasinya
+- Abstract class tidak dapat dibuat menjadi object dengan menggunakan kta kunci new
+- Mirip seperti Interface yang sama sama harus di turunkan (inherit)
+- Bedanya dengan Interface apa?
+    ~ Semua properties/method didalamnya wajib abstract
+    ~ Boleh sebagian ada non abstract dan abstract
+- Abstract Class bertujuan untuk dijadikan sebagai Parent Class yang akan diturunkan
+- Abstract Class seperti menggambarkan hubungan antar Object Parent dan Object Child,
+- sedangkan Interface lebih ke arah kemampuan atau apa yang bisa dilakukan oleh sebuah object
+
+Static
+- Static merupakan kata kunci yang bisa digunakan pada properties atau method di class
+yang menyebabkan properties atau method tersebut bukan lagi bagian dari object yang dibuat dari class
+- Static baik method ataupun properties, akan berperilaku seperti kita membaut global variable/function,
+sehingga daapt diakses langsung tanpa membuat object dari classnya sendiri
+- Tapi kita tetap bisa menambahkan visibility pada static properties/method
+- Paling sering kita jumpat untuk digunakan sebagai class Utility/Helper
+
+Class Relationship
+- Karena implementasi dari object di TypeScript adalah JS Object
+- Jadi sebenarnya jika terdapat dua object walaupun berbeda class, tetapi secara prop dan function tetap sama
+- Sehingga kita bisa membuat object untuk tipe data A, dan membuat object dari tipe data B asal prop dan method sama
+
+Error handling
+- Sama halnya di JS, di TS pun mendukung error handling menggunakan try catch
+- Cara penggunaannya sama seperti TS
+- Kita juga dapat membuat class Error secara manual dengan membuat class turunan dari Error
+
+Namespace
+- Namespace digunakan untuk mengorganisir kode ketika dalam satu module terdapat banyak sekali kode sehingga dikelola dalam Namespace
+- Maka jika dianggap Modeul ini sebuah folder, maka Namespace ini adalah subfolder didalamnya
+- dapat dibuat dengan kata kunci namespace dan kita bisa menambahkan class, function dll didalam Namespace tersebut
